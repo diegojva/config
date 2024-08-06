@@ -12,10 +12,8 @@ spring:
     database: mysql
   cloud:
     openfeign:
-      client:
-        config:
-          course-service:
-            url: http://localhost:9090/api/v1
+      discovery:
+        enabled: true
 
 server:
   port: 3063
