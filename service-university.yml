@@ -1,0 +1,15 @@
+server:
+  port: 3064
+
+spring:
+  application:
+    name: service-course
+  datasource:
+    url: jdbc:mysql://localhost:3308/micro-course-db
+    username: root
+    password: ${MYSQL_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
