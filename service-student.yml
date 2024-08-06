@@ -1,13 +1,10 @@
-server:
-  port: 3063
-
 spring:
   application:
     name: service-student
   datasource:
     url: jdbc:mysql://localhost:3308/micro-student-db
     username: root
-    password: ${MYSQL_PASSWORD}
+    password: sistemas
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
@@ -19,6 +16,9 @@ spring:
         config:
           course-service:
             url: http://localhost:9090/api/v1
+
+server:
+  port: 3063
 
 token:
   signing:
