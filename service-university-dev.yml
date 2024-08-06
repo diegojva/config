@@ -1,6 +1,3 @@
-server:
-  port: 6064
-
 spring:
   application:
     name: service-course
@@ -13,3 +10,6 @@ spring:
     hibernate:
       ddl-auto: update
     database: mysql
+    
+server:
+  port: 6064
